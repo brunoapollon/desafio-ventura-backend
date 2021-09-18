@@ -9,6 +9,9 @@ const UpdateVideoController = require('../controllers/UpdateVideoController');
 const videoRouter = Router();
 
 videoRouter.post('/', videoController.store);
+
+videoRouter.get('/', videoController.index);
+
 videoRouter.patch(
   '/update_thumbnail/:video_id',
   multer(uploadConfig).single('thumbnail'),

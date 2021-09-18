@@ -14,4 +14,13 @@ module.exports = {
       throw new Error('error creating video');
     }
   },
+  async index(request, response) {
+    try {
+      const findFiles = await Video.find();
+
+      return response.status(200).json(findFiles);
+    } catch (err) {
+      throw new Error(err.message);
+    }
+  },
 };

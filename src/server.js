@@ -1,12 +1,14 @@
 require('dotenv/config');
 const express = require('express');
-const handleErros = require('./middlewares/handleErros');
+const cors = require('cors');
 
+const handleErros = require('./middlewares/handleErros');
 const uploadConfig = require('./configs/uploadConfig');
 const routes = require('./index.routes');
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use(handleErros);
 app.use('/files', express.static(uploadConfig.dest));

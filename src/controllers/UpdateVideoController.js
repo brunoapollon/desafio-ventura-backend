@@ -4,6 +4,13 @@ const path = require('path');
 const Video = require('../models/Video');
 const uploadConfig = require('../configs/uploadConfig');
 
+/**
+ * o controller pra atualizar a url do video cadastrado
+ * como no insomnia não é possivel enviar tudo de uma vez
+ * esse controller é responsavel pelo redirecionamento do arquivo para a pasta
+ * uploads e atualizar a url no banco
+ */
+
 module.exports = {
   async update(request, response) {
     const { video_id } = request.params;

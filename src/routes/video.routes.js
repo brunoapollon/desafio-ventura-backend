@@ -8,6 +8,13 @@ const UpdateVideoController = require('../controllers/UpdateVideoController');
 
 const videoRouter = Router();
 
+/**
+ * as rotas foram divididas em pasta
+ * como foi pedido que fosse tratado como um projeto real
+ * caso haja muitas rotas, costumo utilizar separação das rotas por arquivos
+ * e deixar um arquivo index responsavel por gerenciar todas as rotas
+ */
+
 videoRouter.post('/', videoController.store);
 
 videoRouter.get('/', videoController.index);

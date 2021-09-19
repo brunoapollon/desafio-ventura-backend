@@ -2,12 +2,14 @@ const Video = require('../models/Video');
 
 module.exports = {
   async store(request, response) {
-    const { title, description } = request.body;
+    const { title, description, duration } = request.body;
 
-    if (!title || !description) throw new Error('Validation failed');
+    if (!title || !description || !duration) {
+      throw new Error('Validation failed');
+    }
 
     try {
-      const video = await Video.create({ title, description });
+      const video = await Video.create({ title, description, duration });
 
       return response.status(200).json(video);
     } catch (err) {

@@ -7,7 +7,7 @@
 
 ## Projeto
 Esse projeto é o backend de uma aplicação requerida no teste da ventura academy, foram utilizadas ferramentas de padronização de código como o eslint
-e o prettier utilizando o padrão airbnb.
+e o prettier utilizando o padrão airbnb. Foi aplicado variaveis ambiente com um arquivo de exemplo de todas variavéis utilizadas.
 
 
 ## Instruções 

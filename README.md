@@ -17,7 +17,7 @@ e o prettier utilizando o padrão airbnb.
 ## Rotas da aplicação
 - `http://localhost:3333/video/` a primeira rota é a de criação(`POST`) do video informando title, description e duration do video.
 - `http://localhost:3333/video/update_thumbnail/:video_id` (`PATCH`) depois que o o video for criado, deve ser atualizada a url de thumbnail enviando o arquivo de imagem
-com o nome ´thumbnail´ utilizando o multpart no insomnia.
+com o nome `thumbnail` utilizando o multpart no insomnia.
 - `http://localhost:3333/video/update_video/:video_id` (`PATCH`) depois que o o video for criado, deve ser atualizada a url do arquivo de video que será exibido
-enviando o arquivo de video com o nome ´video´ utilizando o multpart no insomnia.
+enviando o arquivo de video com o nome `video` utilizando o multpart no insomnia.
 - `http://localhost:3333/video/` a rota de listagem (`GET`) que lista todos os videos presentes no banco de dados da aplicação

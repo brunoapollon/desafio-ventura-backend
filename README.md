@@ -13,6 +13,7 @@ e o prettier utilizando o padrão airbnb. Foi aplicado variaveis ambiente com um
 ## Instruções 
 - Para instalar todas as dependências utilizadas do projeto basta rodar o comando `yarn`
 - O servidor pode ser iniciado com `yarn dev:server`, onde se tem acesso pelo `http://localhost:3333`
+- Deve ser criado uma pasta `uploads` na raiz do projeto onde os arquivos serão destinados
 
 ## Rotas da aplicação
 - `http://localhost:3333/video/` a primeira rota é a de criação(`POST`) do video informando title, description e duration do video.
